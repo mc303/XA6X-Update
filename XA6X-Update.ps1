@@ -586,7 +586,7 @@ $_html_hotfixes_items = @"
     $_html_output = $_html_body.replace("{hotfixs}",$_html_table_tr)
     $_html_output = $_html_output.replace("{servers_hrp_hf}",$_html_hotfixes)
 	$_html_output = $_html_output.replace("{version}",$_xa__version)
-    $_html_output | Out-File c:\testt.html
+    $_html_output | Out-File "$currentExecutingPath\XA6X-Output.html"
         
     $_hotfixlist_xa = $null
     $_hotfixlist_inet = $null
